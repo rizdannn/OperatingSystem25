@@ -210,29 +210,40 @@ Jawaban : port 22 digunakan untuk layanan SSH (Secure Shell). Kegunaan utamanya 
 ### Latihan 2.A
 
 #### Jalankan lspci -nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vendor:device, dan kernel driver in use.
-Jawaban : Done, diatas
+![namafile](images/17satu.png)
+
+Jawaban : Nama perangkat (Ethernet controller [0200]: Intel Corporation 82540EM Gigabit Ethernet Controller), 
+ID vendor ([8086:100e]), kernel driver is use (e1000)
+
 
 ### Latihan 2.B
 #### Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
-Jawaban : Done, diatas
+![namafile](images/17duasatu.png)
+![namafile](images/17duadua.png)
+
+Jawaban : Device root filysytem berada di sda3 dengan nama ubuntu--vg-ubuntu--lv. Tipe filesystemnya adalah ext4 dan UUIDnya adalah 7752218f-4f64-4196-9e8d-547f330d0a4a
 
 ### Latihan 2.C
 #### Buat file server.log berisi minimal 10 baris dengan variasi kata: INFO, WARN, ERROR. Gunakan grep untuk menampilkan hanya baris ERROR.
-Jawaban : Done, diatas
+![namafile](images/17tiga.png)
 
 ### Latihan 2.D
 #### Gunakan sed untuk mengganti semua kata server menjadi node pada file latihan. Tunjukkan sebelum dan sesudah.
-Jawaban : Done, diatas
+![namafile](images/17empat.png)
 
 ### Latihan 2.E
 #### Gunakan df -h lalu awk untuk menampilkan filesystem yang penggunaan disk di atas 70%.
-Jawaban : Done, diatas
+![namafile](images/17lima.png)
 
 ###  Latihan 2.F
 #### Jalankan sleep 600 &. Temukan PID-nya dengan ps. Hentikan dengan SIGTERM. Jelaskan beda SIGTERM vs SIGKILL.
-Jawaban : Done, diatas
+![namafile](images/17am.png)
+
+Jawaban : PID-nya 1104 dan 1117, sigterm itu sifatnya halus dan sopan sedangkan sigkill sifatnya mamaksa dan kasar.
 
 ### Latihan 2.G
 #### Gunakan systemctl –failed. Jika tidak ada yang gagal, pilih satu service aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.
-Jawaban : Done, diatas
+
+![namafile](images/17tujuh.png)
+
 
